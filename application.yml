@@ -15,6 +15,16 @@ spring:
   cloud:
     config:
       uri: ${vcap.services.${PREFIX:}configserver.credentials.uri:http://user:password@${PREFIX:}configserver.${application.domain:cfapps.io}}
+      cloud:
+    stream:
+      kafka:
+        binder:
+          brokers:
+            - nj02-wise-stat01.nj02.baidu.com
+          defaultBrokerPort: 8092
+          zk-nodes:
+            - nj02-wise-stat01.nj02.baidu.com
+          defaultZkPort: 8181
 oauth2:
   client:
     tokenUri: ${vcap.services.${PREFIX:}sso.credentials.tokenUri:}

@@ -10,6 +10,9 @@ foo: baz
 wangxiaoxi.test: wangxiaoxi
 spring:
   cloud:
+    bus: 
+      trace: 
+        enabled: true
     stream:
       kafka:
         binder:

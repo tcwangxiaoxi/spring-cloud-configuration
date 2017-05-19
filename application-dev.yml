@@ -1,0 +1,16 @@
+foo: baz
+wangxiaoxi.test: wangxiaoxi111
+spring:
+  cloud:
+    bus: 
+      trace: 
+        enabled: true
+    stream:
+      kafka:
+        binder:
+          brokers:
+            - nj02-wise-stat01.nj02.baidu.com
+          defaultBrokerPort: 8092
+          zk-nodes:
+            - nj02-wise-stat01.nj02.baidu.com
+          defaultZkPort: 8181

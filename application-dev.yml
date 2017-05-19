@@ -1,5 +1,5 @@
-foo: baz
-wangxiaoxi.test: wangxiaoxi111
+foo: baz111
+wangxiaoxi.test: wangxiaoxi
 spring:
   cloud:
     bus: 

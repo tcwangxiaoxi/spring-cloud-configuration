@@ -1,8 +1,11 @@
 foo: baz
+management:
+  security:
+    enabled: false
 wangxiaoxi.test: wangxiaoxi123
 spring:
   zipkin: 
-    base-url=http://localhost:8004
+    base-url: http://localhost:8004
   cloud:
     bus: 
       trace: 

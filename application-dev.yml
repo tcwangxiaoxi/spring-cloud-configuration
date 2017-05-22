@@ -1,6 +1,8 @@
 foo: baz
 wangxiaoxi.test: wangxiaoxi123
 spring:
+  zipkin: 
+    base-url=http://localhost:8004
   cloud:
     bus: 
       trace: 
